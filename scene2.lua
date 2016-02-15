@@ -1,18 +1,7 @@
----------------------------------------------------------------------------------
---
--- scene.lua
---
----------------------------------------------------------------------------------
-
 local sceneName = ...
 
 local composer = require( "composer" )
-
--- Load scene with same root filename as this file
 local scene = composer.newScene( sceneName )
-
----------------------------------------------------------------------------------
-
 local nextSceneButton
 
 function scene:show( event )
@@ -45,7 +34,7 @@ function scene:show( event )
         	end
         	nextSceneButton:addEventListener( "touch", nextSceneButton )
         end
-    end 
+    end
 end
 
 function scene:hide( event )
